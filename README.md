@@ -2,6 +2,7 @@
 A simple Python prank script that simulates a fake "hacker attack" by opening Command Prompt, displaying scary messages, rickrolling the victim, and shutting down the PC. Made for educational and entertainment purposes only.
 
 # Fake Hacker Prank
+<img width="1919" height="1034" alt="Στιγμιότυπο οθόνης 2026-06-08 174549" src="https://github.com/user-attachments/assets/dce714dd-e737-450c-a89e-b63601b9b0e7" />
 
 A simple Python prank script that creates the illusion of a computer being hacked.
 

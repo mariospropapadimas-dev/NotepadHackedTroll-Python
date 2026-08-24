@@ -8,19 +8,23 @@ A simple Python prank script that creates the illusion of a computer being hacke
 
 ## Features
 
+* Pops up a fake Windows error message for an instant jump-scare
 * Opens Command Prompt automatically
 * Changes CMD text color to green
 * Runs a fake directory scan
 * Opens a surprise video (Rickroll)
 * Creates a scary Notepad message
-* Displays a fake countdown
-* Shuts down the computer
+* Displays a fake countdown with dramatic beeps
+* Ends with a typed-out "Just kidding!" reveal — the PC is safe by default
+* Real shutdown is available too, behind a single on/off switch
 
 ## Requirements
 
 ```bash
 pip install pyautogui
 ```
+
+`ctypes` and `winsound` are used for the popup and beeps, but both are built into Python on Windows — no extra install needed.
 
 ## Usage
 
@@ -32,12 +36,13 @@ python main.py
 
 The script will:
 
-1. Open Command Prompt
-2. Execute fake "hacker-looking" commands
-3. Open a surprise video
-4. Display a fake warning message
-5. Count down from 3
-6. Shut down the PC
+1. Show a fake "Critical System Failure" popup
+2. Open Command Prompt
+3. Execute fake "hacker-looking" commands
+4. Open a surprise video
+5. Display a fake warning message
+6. Count down from 3, with a beep each second
+7. Type out a "Just kidding!" message (or shut down the PC, if enabled)
 
 ## Warning
 
@@ -45,7 +50,7 @@ This project is intended for educational and entertainment purposes only.
 
 Do not run this on computers without the owner's permission.
 
-The script will shut down the system automatically after execution.
+By default the script does **not** actually shut down the PC — it ends with a harmless "Just kidding!" message typed into Notepad. If you want the original real-shutdown behavior, open `main.py` and set `REAL_SHUTDOWN = True` at the top of the file. With that flag on, the script *will* shut down the system automatically after execution.
 
 ## Disclaimer
 
@@ -61,6 +66,8 @@ Your pc will shut down in
 3
 2
 1
+
+Just kidding! 😄 You have NOT been hacked.
 ```
 
 Have fun and don't scare your friends too much. 😈
